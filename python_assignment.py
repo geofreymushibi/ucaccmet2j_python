@@ -19,14 +19,14 @@ with open ('seattle_data.json ', 'w') as file: # open JSON file
 
 ####PART 2#####
 
-total_precipitation = 0
+total_precipitation = 0 #a new variable were we are going to add all the monthly records 
 for i in seattle_data:
     total_precipitation += i
 
-print(total_precipitation)
+print(total_precipitation) #yearly precipitation 
 
-average = []
+average = [] #a new variable where we are going to calculate the monthly proportions 
 for data in seattle_data:
-    average.append(data/total_precipitation)
+    average.append(data/total_precipitation) #finds the ratio by diving monthly data by yearly data 
 
 print(average)
